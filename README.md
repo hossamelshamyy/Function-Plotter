@@ -1,1 +1,3 @@
 # Function-Plotter
+![](workingGIFex.gif)
+
