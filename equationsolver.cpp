@@ -179,7 +179,7 @@ QVector<double> EquationSolver::calcFunc(QString func,double from,double to,doub
     func = func.toUpper(); // Convert X variable to uppercase incase the user entered it in a lowercase
 
     // Here we check if the function contains any alphabet except X or contains any special character except the allowed operators
-    if(func.contains(QRegExp("[A-WY-Z]+"))|| func.contains(QRegExp("[!@#$%&_=`~'\";:<>?\\|/\\{\\}]"))) {
+    if(func.contains(QRegExp("[A-WY-Z]+"))|| func.contains(QRegExp("[!@#$%&_=`~'\";:<>?\\|\\{\\}]"))) {
         emit errorMsg(QString("Your function is completely wrong ! please check it again"));
         return y;
     }
