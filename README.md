@@ -9,7 +9,7 @@ ________________________________________________________________________________
 ### - Featueres 
 #### Flexible, you can write your function in any format
 #### if error occurr it can identify the reason 
-#### Accept decimal and integer numbers in all places like the function and bounds of the graph
+#### Accept decimal and integer numbers in all places like the function and domain of the graph
 #### Allowed characters * / + - ( )
 
 _______________________________________________________________________________________________________________
