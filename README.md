@@ -1,4 +1,4 @@
-# Function-Plotter
+# Function Plotter
 ## Simple App that will plot any function you want using [Qt](https://www.qt.io/) framework and [QCustomPlot](https://www.qcustomplot.com/) library
 <br>
 
