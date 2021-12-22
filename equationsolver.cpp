@@ -215,7 +215,7 @@ QVector<double> EquationSolver::calcFunc(QString func,double from,double to,doub
             if(i !=0)
                 func[i-1].isDigit() ? func.insert(i,'*'):NULL; // if this case happened "3X" will convert it to "3 * X", so we can evaluate the expression correctly later
         }
-        if(is_operator(func[i].toLatin1()) || func[i] == '(' || func[i] == ')'){
+        if(is_operator(func[i].toLatin1()) || func[i] == '(' || func[i] == ')'){ // if the current character is operator or '(' or ')' , then will check if there are whitespaces before and after the character, otherwise will add the needed whitespaces
             char x = func[i].toLatin1();
             if(i !=0)
                 func[i-1]!= ' '?func.insert(i,' '):NULL;

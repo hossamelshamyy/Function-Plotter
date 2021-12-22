@@ -36,7 +36,10 @@ void MainWindow::on_graphBtn_clicked()
     double to = ui->to_lineEdit->text().toDouble();
     double step = ui->step_lineEdit->text().toDouble();
 
-
+    if(from == 0 || to == 0 || step == 0){
+        showErrorMsg("Please enter the bounds correctly");
+        return;
+    }
     QVector<double> y = solver.calcFunc(ui->func_TE->toPlainText().toLocal8Bit().data(),from,to,step);
 
     // If any error occurr y vector will be empty then we will exit the function
@@ -64,6 +67,7 @@ void MainWindow::on_graphBtn_clicked()
 void MainWindow::showErrorMsg(QString msg){
     QMessageBox Msgbox;
     Msgbox.setText(msg);
+    Msgbox.setGeometry(this->geometry().marginsAdded(QMargins(-350,-350,-350,-350)));
     Msgbox.exec();
 }
 
