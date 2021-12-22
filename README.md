@@ -1,12 +1,12 @@
 # Function-Plotter
-## Simple App that will plot any function you want.
+## Simple App that will plot any function you want using [Qt](https://www.qt.io/) framework and [QCustomPlot](https://www.qcustomplot.com/) library
 <br>
 
 ![](gifEx.gif)
 
 _______________________________________________________________________________________________________________
 
-### - Featueres 
+### - Features 
 #### Flexible, you can write your function in any format
 #### if error occurr it can identify the reason 
 #### Accept decimal and integer numbers in all places like the function and domain of the graph
