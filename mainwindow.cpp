@@ -67,6 +67,7 @@ void MainWindow::on_graphBtn_clicked()
 void MainWindow::showErrorMsg(QString msg){
     QMessageBox Msgbox;
     Msgbox.setText(msg);
+    Msgbox.setWindowTitle("Error");
     Msgbox.setGeometry(this->geometry().marginsAdded(QMargins(-350,-350,-350,-350)));
     Msgbox.exec();
 }
